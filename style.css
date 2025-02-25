@@ -1,0 +1,18 @@
+* {
+    margin: 0.5;
+    padding: 0.5;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #e6e6fa;
+    color: black
+}
+
+.frase-titulo {
+color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+}
