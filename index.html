@@ -8,110 +8,129 @@
 </head>
 
 <body>
-    <header> 
-        <nav >
-            <a href="#">Início</a>
-            <a href="#">Consulta</a>
-            <a href="#">Edital</a>
-            <a href="#"> Fale com um dos nosso atendentes</a>
-        </nav>
-    </header>
-<main class="frase-titulo">
-    <section class="apresentacao_conteudo">
-    <h1>PREENCHA OS DADOS ABAIXO PARA FAZER SUA INSCRIÇÃO NO PROGRAMA TRILHAS</h1>
-    </section class= "frase_conteudo">
-</main>
-<div id="formPartipantes">
-<div id="infoParticipantes">
-    <p><strong>Informações dos participantes</strong></p>
-    <form>
-        <label for="nome">Nome Completo</label><br>
-        <input type="text" id="nome" name="nome">
-    </form>
-    <form>
-        <label for="data">Data de Nascimento</label><br>
-        <input type="date" id="data" name="data">
-    </form>
-    <form>
-        <label for="cpf">CPF</label><br>
-        <input type="text" id="cpf" name="cpf">
-    </form>
-    <form>
-        <label for="sexo">Sexo</label><br>
-        <select id="sexo" name="sexo">
-            <option value="feminino">Feminino</option>
-            <option value="masculino">Masculino</option>
-        </select>
-    </form>
-    <form>
-        <label for="email">E-mail</label><br>
-        <input type="email" id="email" name="email">
-    </form>
-    <form>
-        <label for="telefone">Telefone</label><br>
-        <input type="text" id="telefone" name="telefone">
-    </form>
-    <form>
-        <label for="file">Documento de identidade</label><br>
-        <input type="file" id="arquivo" name="arquivo">
-    </form>
-</div>
-<div id="infoEndereco">
-    <p><strong>Endereço Residencial</strong></p>
-    <form>
-        <label for="cep">CEP</label><br>
-        <input type="text" id="cep" name="cep">
-    </form>
-    <span>
-    <form>
-        <label for="rua">Rua</label><br>
-        <input type="text" id="rua" name="rua">
-    </form>
-    <form>
-        <label for="numero">Número</label><br>
-        <input type="text" id="numero" name="numero">
-    </form>
-    </span>
-    <span>
-        <form>
-            <label for="cidade">Cidade</label><br>
-            <input type="text" id="cidade" name="cidade">
+    <div class="container">
+        <header> 
+            <nav >
+                <a href="#">Início</a>
+                <a href="#">Consulta</a>
+                <a href="#">Edital</a>
+                <a href="#"> Fale com um dos nosso atendentes</a>
+            </nav>
+        </header>
+    <main class="frase-titulo">
+        <section class="apresentacao_conteudo">
+        <h1>PREENCHA OS DADOS ABAIXO PARA FAZER SUA INSCRIÇÃO NO PROGRAMA TRILHAS</h1>
+        </section class= "frase_conteudo">
+    </main>
+        <form> 
+            <div class="total">
+                <h4>Informações do participante</h4>
+                <div class="preencher">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="preencher">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <div class="preencher">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf">
+                </div>
+                <div class="preencher">
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo" name="sexo">
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                    </select>
+                </div>
+                <div class="preencher">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="preencher">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone">
+                </div>
+                <p>Documento de identidade</p>
+                <div class="upload"></div>
+            </div>
+            <div class="total">
+                <h4 class="outrosTitulos">Endereço Residencial</h4>
+                <div class="preencher">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep">
+                </div>
+                <div class="preencher">
+                    <span>
+                        <div class="preencher">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" name="rua">
+                        </div>
+                        <div class="preencher">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero">
+                        </div>
+                    </span>
+                </div>
+                <div class="preencher">
+                    <span>
+                        <div class="preencher">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade">
+                        </div>
+                        <div class="preencher">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado" name="estado">
+                        </div>
+                    </span>
+                </div>
+                <p>Comprovante de residência</p>
+                <div class="upload"></div>
+            </div>
+            <div class="total">
+                <h4>Trilhas de aprendizagem</h4>
+                <div class="trilhas">
+                    <div class="caixa">
+                        <input type="radio" id="frontEnd" name="trilha" value="frontEnd">
+                        <img src="front-end.png">
+                        <label for="frontEnd">Programação Front-end</label>
+                    </div>
+                    <div class="caixa">
+                        <input type="radio" id="backend" name="trilha" value="backend">
+                        <img src="back-end.png">
+                        <label for="backend">Programação Back-end</label>
+                    </div>
+                    <div class="caixa">
+                        <input type="radio" id="jogos" name="trilha" value="Jogos">
+                        <img src="jogos.png">
+                        <label for="jogos">Programação de Jogos</label>
+                    </div>
+                    <div class="caixa">
+                        <input type="radio" id="ux" name="trilha" value="ux">
+                        <img src="ux.png">
+                        <label for="ux">Design e Experiência</label>
+                    </div>
+                    <div class="caixa">
+                        <input type="radio" id="dados" name="trilha" value="dados">
+                        <img src="dados.png">
+                        <label for="dados">Ciência de Dados</label>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 30px;">
+                <input type="checkbox" id="termos" name="termos" value="lido">
+                <label for="termos">Declaro que li e concordo com os <a href="">Termos e Condições</a> e com a 
+                <a href="">Política de Privacidade</a></label>
+            </div>
+            <div class="final">
+                <button class="cancelar">Cancelar</button>
+                <button class="inscrever">Fazer inscrição</button>
+            </div>
         </form>
-        <form>
-            <label for="estado">Estado</label><br>
-            <input type="text" id="estado" name="estado">
-        </form>
-    </span>
-    <form>
-        <label for="file">Comprovante de residência</label><br>
-        <input type="file" id="residencia" name="residencia">
-    </form>
-</div>
-<div id="trilhas">
-    <p><strong>Trilhas de aprendizagem</strong></p>
-    <p>Selecione apenas uma trilha</p>
-    <form>
-        <input type="radio" id="frontEnd" name="trilha" value="frontEnd">
-        <label for="frontEnd">Programação Front-end</label><br>
-        <input type="radio" id="backend" name="trilha" value="backend">
-        <label for="backend">Programação Back-end</label><br>
-        <input type="radio" id="jogos" name="trilha" value="Jogos">
-        <label for="jogos">Programação de Jogos</label>
-        <input type="radio" id="ux" name="trilha" value="ux">
-        <label for="ux">Design e Experiência</label>
-        <input type="radio" id="dados" name="trilha" value="dados">
-        <label for="dados">Ciência de Dados</label>
-    </form> 
-    <br>
-    <form>
-        <input type="checkbox" id="termos" name="termos" value="lido">
-        <label for="termos">Declaro que li e concordo com os <a>Termos e Condições</a> e com a 
-        <a>Política de Privacidade</a></label><br>
-    </form>
-</div>
-</div>
-<footer>
-    Desenvolvido por Alice Dias e Rita de Cássia
-</footer>
+        <footer>
+            Desenvolvido por Alice Dias e Rita de Cássia
+        </footer>
+    </div>
 </body>
 </html>

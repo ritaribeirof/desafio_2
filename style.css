@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    margin: 0.5;
-    padding: 0.5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
-    background-color: #e6e6fa;
-    color: black
+    background-color: #3c3caa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .frase-titulo {
@@ -16,23 +21,134 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-#formPartipantes{
-    display: flex;
-    flex-direction: column;
-    border: solid black 2px;
-}
-#infoParticipantes, #infoEndereco, #trilhas {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 40%;
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 15px;
 }
 
-span {
+.container form {
+    position: relative;
+    min-height: 1500px;
+    margin-top: 12px;
+}
+
+h4{
+    margin-right: 50px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    align-self: flex-start;
+    padding-left: 25px;
+}
+
+.container form .total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container form .preencher{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 50px;
+}
+
+.preencher label{
+    font-size: 12px;
+    font-weight: 100px;
+}
+
+.preencher input, select{
+    height: 30px;
+    border-radius: 6px;
+    border: solid #D6D3D1 0.5px;
+}
+
+.outrosTitulos{
+    margin-bottom: 0;
+}
+
+.preencher span{
     display: flex;
     flex-direction: row;
+    gap: 5px;
+}
+
+.trilhas{
+    display: flex;
     flex-wrap: wrap;
-    gap: .4em;
+    gap: 5px;
+    margin: 20px;
+    margin-left: 70px;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid #D6D3D1 0.5px;
+    border-radius: 6px;
+    height: 120px;
+    width: 256px;
+    padding: 10px;
+}
+.caixa:hover{
+    border: solid #F3541C 0.5px;
+}
+
+.caixa input{
+    align-self: flex-start;
+}
+
+p{
+    font-size: 12px;
+    align-self: flex-start;
+    padding-left: 25px;
+}
+
+.upload{
+    width: 650px;
+    height: 220px;
+    background-image: url(FileUploadField.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(228, 58, 18, 1);
+}
+
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.cancelar{
+    height: 48px;
+    width: 123px;
+    border-radius: 6px;
+    border: solid rgba(228, 58, 18, 1) .5px;
+    color: rgba(228, 58, 18, 1);
+    background-color: white;
+}
+
+.inscrever{
+    height: 48px;
+    width: 169px;
+    border-radius: 6px;
+    border: solid rgba(228, 58, 18, 1) .5px;
+    color: white;
+    background-color:rgba(228, 58, 18, 1) ;
 }
 
 
