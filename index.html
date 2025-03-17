@@ -21,7 +21,9 @@
     <h1>PREENCHA OS DADOS ABAIXO PARA FAZER SUA INSCRIÇÃO NO PROGRAMA TRILHAS</h1>
     </section class= "frase_conteudo">
 </main>
+<div id="formPartipantes">
 <div id="infoParticipantes">
+    <p><strong>Informações dos participantes</strong></p>
     <form>
         <label for="nome">Nome Completo</label><br>
         <input type="text" id="nome" name="nome">
@@ -49,6 +51,64 @@
         <label for="telefone">Telefone</label><br>
         <input type="text" id="telefone" name="telefone">
     </form>
+    <form>
+        <label for="file">Documento de identidade</label><br>
+        <input type="file" id="arquivo" name="arquivo">
+    </form>
+</div>
+<div id="infoEndereco">
+    <p><strong>Endereço Residencial</strong></p>
+    <form>
+        <label for="cep">CEP</label><br>
+        <input type="text" id="cep" name="cep">
+    </form>
+    <span>
+    <form>
+        <label for="rua">Rua</label><br>
+        <input type="text" id="rua" name="rua">
+    </form>
+    <form>
+        <label for="numero">Número</label><br>
+        <input type="text" id="numero" name="numero">
+    </form>
+    </span>
+    <span>
+        <form>
+            <label for="cidade">Cidade</label><br>
+            <input type="text" id="cidade" name="cidade">
+        </form>
+        <form>
+            <label for="estado">Estado</label><br>
+            <input type="text" id="estado" name="estado">
+        </form>
+    </span>
+    <form>
+        <label for="file">Comprovante de residência</label><br>
+        <input type="file" id="residencia" name="residencia">
+    </form>
+</div>
+<div id="trilhas">
+    <p><strong>Trilhas de aprendizagem</strong></p>
+    <p>Selecione apenas uma trilha</p>
+    <form>
+        <input type="radio" id="frontEnd" name="trilha" value="frontEnd">
+        <label for="frontEnd">Programação Front-end</label><br>
+        <input type="radio" id="backend" name="trilha" value="backend">
+        <label for="backend">Programação Back-end</label><br>
+        <input type="radio" id="jogos" name="trilha" value="Jogos">
+        <label for="jogos">Programação de Jogos</label>
+        <input type="radio" id="ux" name="trilha" value="ux">
+        <label for="ux">Design e Experiência</label>
+        <input type="radio" id="dados" name="trilha" value="dados">
+        <label for="dados">Ciência de Dados</label>
+    </form> 
+    <br>
+    <form>
+        <input type="checkbox" id="termos" name="termos" value="lido">
+        <label for="termos">Declaro que li e concordo com os <a>Termos e Condições</a> e com a 
+        <a>Política de Privacidade</a></label><br>
+    </form>
+</div>
 </div>
 <footer>
     Desenvolvido por Alice Dias e Rita de Cássia
