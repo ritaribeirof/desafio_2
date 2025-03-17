@@ -9,7 +9,7 @@
 body {
     min-height: 100vh;
     box-sizing: border-box;
-    background-color: #3c3caa;
+    background-color: #2135A6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,9 +17,7 @@ body {
 
 .frase-titulo {
 color: black;
-display: flex;
-align-items: center;
-justify-content: center;
+text-align: center;
 }
 
 .container {
@@ -151,4 +149,25 @@ a{
     background-color:rgba(228, 58, 18, 1) ;
 }
 
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #D6D3D1;
+    border-radius: 50%;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    border: none;
+    background-image: url(checked.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+input[type="checkbox"] {
+    accent-color: #F3541C; 
+}
 
