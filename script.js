@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isValid = false;
         }
 
-        const requiredFields = ['nome', 'usuario', 'senha'];
+        const requiredFields = ['nome', 'usuario', 'senha', 'rua', 'numero', 'cidade', 'estado'];
         requiredFields.forEach(field => {
             const value = document.getElementById(field).value;
             if (!value) {
@@ -57,6 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
             isValid = false;
         }
 
+        const cep = document.getElementById('cep').value;
+        if(!validateCEP(cep)){
+            showError('cepError', 'Cep inválido. Exemplo: 00000-000');
+            isValid = false;
+        }
         if (isValid) {
             users.push(formData);
             localStorage.setItem('users', JSON.stringify(users));
@@ -88,8 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function validateCPF(cpf) {
-        
-        return cpf.length === 12 && !isNaN(cpf);
+
+        return cpf.length === 11 && !isNaN(cpf);
     }
 
     function calculateAge(birthdate) {
@@ -106,6 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function validatePhone(phone) {
         const regex = /^\(\d{2}\)\s\d{5}-\d{4}$/;
         return regex.test(phone);
+    }
+
+    function validateCEP(cep) {
+
+        return cep.length === 9;
     }
 
     function showError(elementId, message) {
@@ -134,5 +144,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
 
