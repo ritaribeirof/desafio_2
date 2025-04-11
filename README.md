@@ -31,5 +31,6 @@
       <li>Página de login</li>
     </ul>
 </ol>
-
+<p>Documentação:</p>
+(https://docs.google.com/document/d/1hMlVwdPHBFgKmi6IrzxXiyWKn4Ma5TKs9d7q8PZZzec/edit?tab=t.0)
 <p>Criado por: Alice Dias e Rita de Cássia</p>
